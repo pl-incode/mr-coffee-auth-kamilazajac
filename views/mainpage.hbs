@@ -1,0 +1,21 @@
+<nav class='navbar navbar-expand-lg navbar-light bg-light'>
+  <a class='navbar-brand' href='#'>Protected Page</a>
+</nav>
+<div style='margin-top: 30px'>
+  <a class='btn btn-primary btn-lg active' href='/logout'>Logout</a>
+  <a class='btn btn-primary btn-lg active' href='/newSchedule'>New Schedule</a>
+
+  <h1>{{Title}}</h1>
+  <div>
+    {{#each schedules as |schedule|}}
+      <h3>User
+        <a
+          href='./userPage/{{schedule.user_id}}'
+        >{{schedule.firstname}}</a></h3>
+      <p>day: {{schedule.day}}</p>
+      <p>Start at: {{schedule.start_at}}</p>
+      <p>End at: {{schedule.end_at}}</p>
+    {{/each}}
+  </div>
+
+</div>
