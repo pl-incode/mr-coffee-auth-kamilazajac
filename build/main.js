@@ -49,7 +49,7 @@ const pool = new pg_1.Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'mrcoffee',
-  password: '',
+  password: '1',
   port: 5432,
 });
 const port = 8080;
